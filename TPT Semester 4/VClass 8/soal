@@ -1,0 +1,5 @@
+Tulis program menu di mana Anda dapat memasukkan karakter untuk memilih nama, alamat, alamat pos, atau nomor telepon Anda. Ini harus dilakukan dengan loop sehingga Anda berulang kali dapat memilih dari menu sampai Anda memasukkan X untuk keluar dari program.
+
+Attach jawaban:
+1. ScreenShoot dalam bentuk file doc, dengan nama namamhs_str.doc atau namamhs_str.docs
+2. Program dalam bentuk file cpp dengan nama nmmhs_str.cpp
