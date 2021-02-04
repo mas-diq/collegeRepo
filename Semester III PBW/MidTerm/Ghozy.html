@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Midterm</title>
+</head>
+
+<body>
+
+    <h3>Mengoding dengan Javascript</h3>
+
+    <p id="tanggalbulan"></p>
+
+    <script lang="Javascript">
+        var Tanggal = new Date();
+        var Hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        var Bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober",
+            "November", "Desember"
+        ];
+        document.getElementById("tanggalbulan").innerHTML = Hari[Tanggal.getDay()] + ", " + Tanggal.getDate() + " " +
+            Bulan[Tanggal.getMonth()] + " " + Tanggal.getFullYear();
+
+        var tanya = window.confirm("Are You Ready?");
+        var mari = new String('Mari Bermain Data & Angka <br> ')
+        document.write(mari.fontcolor("green"))
+        document.write("Ini contoh variabel = A. iniContoh, Contoh_lain <br>");
+
+        document.write("Ini Contoh Bilangan : <br>");
+        document.write("4 * 2 = " + (4 * 2) + "<br>");
+        document.write("3 % 2 = " + (3 % 2) + "<br>");
+        document.write("7 + 11 = " + (7 + 11) + "<br>");
+        document.write("7 - 11 = " + (7 - 11) + "<br>");
+
+        function myFunction() {
+            var x, text;
+
+            x = document.getElementById("numb").value;
+
+
+            if (isNaN(x) || x >= 60 || x < 60) {
+                text = "Kamu sudah berhasil";
+            } else {
+                text = "Kamu belum berhasil";
+            }
+            document.getElementById("nilaiku").innerHTML = text;
+        }
+    </script>
+
+    Masukan Nilai
+    <input id="numb" onkeyup="myFunction()">
+
+    <p id="nilaiku"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+    <script language="JavaScript">
+        var baris, i = 0;
+        var nilai = prompt("Tinggi = ", 5);
+        var tinggi = parseInt(nilai);
+        for (baris = 1; baris <= tinggi; baris++) {
+            for (i = 1; i <= tinggi - baris; i++) {
+                document.write("_");
+            }
+            for (i = 1; i < 2 * baris; i++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

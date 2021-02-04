@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script languange="php">
+        $berat = "40.5 kg";
+        printf("Tipe String : $berat <BR>");
+        printf("Tipe double : %s <BR>", (double) $berat);
+        printf("Tipe Integer : %s <BR>", (int) $berat);
+        printf("Tipe string : %s <BR>", $berat);
+        $bilangan = 28;
+        $berat = (string) $bilangan;
+        printf("Bil.ke String : %s <BR>\n", $berat);
+        $test = 999.99999;
+        printf("%3.5f <br>", $test, "\n");
+        $kode_hari = date("w");
+        if ($kode_hari == 0)
+            print("Minggu");
+        elseif($kode_hari == 1)
+        print("Senin");
+        elseif($kode_hari == 2)
+        print("Selasa");
+        elseif($kode_hari == 3)
+        print("rabu");
+        elseif($kode_hari == 4)
+        print("kamis");
+        elseif($kode_hari == 5)
+        print("juma'at");
+        elseif($kode_hari == 6)
+        print("sabtu");
+        else
+            print("Salah Memasukan");
+    </script>
+</body>
+
+</html>

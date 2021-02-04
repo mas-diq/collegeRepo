@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 4</title>
+	<!-- pada latihan ini, kita belajar mengenai penggunaan variabel lokal , dan global. dan menggunakan beberapa fungsi / prosedur -->
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 12;
+
+		function tukar(a){
+			a= a *2;
+			return a;
+		}
+		// ini menggunakan variabel global
+
+		function tukar2(a){
+			var x = a*2;
+			return x;
+		}
+		//ini menggunakana variabel lokal
+
+		document.write(a+" "+tukar(a)+"<br>");
+		document.write(a+" "+tukar2(a));
+	</script>
+</body>
+</html>
